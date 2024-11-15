@@ -1,49 +1,66 @@
 /* 共通 css */
 :root {
-    --main-bg-color: ;
-    --sub-bg-color: ;
-    --font-color: ;
-    --border-color: ;
+    --font-color: #333;
 }
 * {
     box-sizing: border-box;
-    color: ;
+    color: var(--font-color);
 }
 body {
-    /* https://ics.media/entry/200317/#各osのフォント指定はどれがいいか */
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-family: "Noto Sans JP", "Noto Sans", serif;
+    font-optical-sizing: auto;
     margin: unset;
 }
 img {
     display: block;
 }
-h1, h2, h3, h4, h5, p, ul, ol, dl, dd {
+h1, p, ul {
     margin: unset;
     padding: unset;
 }
-h2 {
-    font-weight: ;
-    font-size: px;
-    color: ;
+p {
+    font-size: 16px;
 }
 a, a:visited {
-    font-weight: ;
-    font-size: px;
-    color: ;
-    text-decoration: none;
+    font-size: 14px;
+    color: var(--font-color);
 }
 p.copy {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    font-size: 12px;
 }
 div.container {
-    max-width: px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
-/* 狭い画面向けの既定の CSS レイアウト値 */
 
+
+/* 狭い画面向けの既定の CSS レイアウト値 */
+header h1 {
+    margin: 20px 0;
+    display: inline-block;
+}
+header h1 img.logo{
+    width: 145px;
+    height: 30px;
+}
+header nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+header nav ul {
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+header nav ul li {
+    padding-right: 60px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 @media (min-width: 480px) {
   /* 中型の画面向けの CSS */
 }
