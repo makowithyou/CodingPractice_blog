@@ -39,7 +39,7 @@ div.container {
 
 /* 狭い画面向けの既定の CSS レイアウト値 */
 header {
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
 }
 header h1 {
@@ -57,11 +57,13 @@ header h1 a img.logo{
 header nav {
     background-color: #333;
     padding: 10px 0;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 header nav ul {
     display: flex;
-    overflow: scroll;
-    scrollbar-width: none;
+    /* overflow: scroll;
+    scrollbar-width: none; */
 }
 header nav ul li {
     font-size: 14px;
