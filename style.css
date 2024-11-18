@@ -62,15 +62,14 @@ header nav {
 }
 header nav ul {
     display: flex;
-    /* overflow: scroll;
-    scrollbar-width: none; */
 }
 header nav ul li {
     font-size: 14px;
     line-height: 1.14;
     padding-right: 60px;
 }
-header nav ul li a {
+header nav ul li a,
+header nav ul li a:visited {
     color: #fff;
     text-decoration: none;
 }
