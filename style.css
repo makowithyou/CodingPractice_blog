@@ -40,6 +40,7 @@ div.container {
 /* 狭い画面向けの既定の CSS レイアウト値 */
 header {
     position: fixed;
+    width: 100%;
 }
 header h1 {
     padding: 20px 0;
@@ -145,12 +146,79 @@ main aside#Sidebar section#Ranking {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
 }
 main aside#Sidebar section#Ranking h2 {
     font-size: 18px;
     margin-bottom: 30px;
 }
-
+main aside#Sidebar section#Ranking article h2 {
+    font-size: 14px;
+    line-height: 150%;
+}
+main aside#Sidebar section#Archive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+}
+main aside#Sidebar section#Archive h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+main aside#Sidebar section#Archive div {
+    width: 100%;
+    border-top: 1px solid #777;
+    padding: 20px;
+}
+main aside#Sidebar section#Archive div:last-of-type {
+    border-bottom: 1px solid #777;
+}
+main aside#Sidebar section#Archive div time {
+    font-size: 14px;
+}
+footer {
+    background-color: #f7f7f7;
+    padding: 50px 0 10px;
+}
+footer p.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: normal;
+}
+footer p {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+footer a {
+    text-decoration: unset;
+}
+footer div.about {
+    margin-bottom: 50px;
+}
+footer div.about li {
+    list-style-type: disclosure-closed;
+    list-style-position: inside;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+footer div.menu li {
+    list-style: none;
+    padding: 15px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+}
+footer div.menu li:last-of-type {
+    border-bottom: 1px solid #333;
+}
+footer div.menu {
+    margin-bottom: 30px;
+}
+footer p.copy {
+    margin-top: 90px;
+}
 
 @media (min-width: 480px) {
   /* 中型の画面向けの CSS */
