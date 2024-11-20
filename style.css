@@ -108,6 +108,7 @@ main div#MainArea article h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
+    align-self: start;
 }
 main div#MainArea article div {
     align-self: flex-start;
