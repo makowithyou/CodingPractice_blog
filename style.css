@@ -92,6 +92,9 @@ main div#Pickup p {
     font-weight: bold;
     margin-bottom: 15px;
 }
+main div#Pickup a:hover {
+    text-decoration: none;
+}
 main div#MainArea {
     margin-top: 100px;
 }
@@ -108,6 +111,9 @@ main div#MainArea article h2 {
 }
 main div#MainArea article div {
     align-self: flex-start;
+}
+main div#MainArea article div time {
+    margin-right: 20px;
 }
 main div#MainArea article div time,
 main div#MainArea article div span {
@@ -155,6 +161,7 @@ main aside#Sidebar section#Ranking h2 {
 }
 main aside#Sidebar section#Ranking article h2 {
     font-size: 14px;
+    font-weight: normal;
     line-height: 150%;
 }
 main aside#Sidebar section#Archive {
@@ -229,12 +236,47 @@ footer p.copy {
 main div#Pickup {
     display: flex;
     padding-top: 44px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 main div#Pickup div {
     margin: unset;
 }
 main div#Pickup div:not(:last-of-type) {
     padding-right: 23px;
+}
+main div.container:last-of-type {
+    display: flex;
+}
+main div#MainArea {
+    margin-top: unset;
+    margin-right: 20px;
+    width: 66%;
+}
+main aside#Sidebar {
+    margin-left: 20px;
+    width: 33%;
+}
+main div#MainArea article {
+    margin: 0 0 80px;
+}
+main aside#Sidebar section#Archive {
+    margin-bottom: 140px;
+}
+footer div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer div.about {
+    width: 30%;
+}
+footer div.menu {
+    width: 30%;
+}
+footer div.twitter {
+    width: 30%;
+}
+footer p.copy {
+    width: 100%;
 }
 }
